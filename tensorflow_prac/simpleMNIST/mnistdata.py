@@ -68,7 +68,7 @@ class MNISTData:
         self.max = maxvalue
         self.test = self.raw_mnist.test
         self.train = self.raw_mnist.train
-        self.batced_train = MNISTBatchedData( getTrainData(self.raw_mnist), maxvalue)
+        self.batched_train = MNISTBatchedData( getTrainData(self.raw_mnist), maxvalue)
         self.batched_test = MNISTBatchedData(getTestData(self.raw_mnist), maxvalue)
 
 
